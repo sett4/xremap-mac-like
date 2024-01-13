@@ -1,0 +1,40 @@
+keymap:
+- name: xremap-python
+  remap:
+    ALT_R-a: home
+    ALT_R-b: left
+    ALT_R-c: C-c
+    ALT_R-d: delete
+    ALT_R-e: end
+    ALT_R-f: right
+    ALT_R-n: down
+    ALT_R-p: up
+- application:
+    only:
+    - Google-chrome
+    - Code
+    - gnome-terminal-server
+  name: xremap-python
+  remap:
+    CTRL-SHIFT-LEFTBRACE: LEFTCTRL-PAGEUP
+    CTRL-SHIFT-RIGHTBRACE: LEFTCTRL-PAGEDOWN
+- application:
+    only:
+    - Code
+  name: xremap-python
+  remap:
+    C-M-f: C-h
+modmap:
+- name: xremap-python
+  remap:
+    Alt_L:
+      alone: Muhenkan
+      held: Control_L
+    Alt_R:
+      alone: Henkan
+      held: Control_R
+    CapsLock: Alt_R
+    Win_L:
+      alone: Win_L
+      held: Alt_L
+
